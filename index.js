@@ -1,39 +1,5 @@
 document.addEventListener('DOMContentLoaded', function()
 {
-    if ('serviceWorker' in navigator)
-    {
-        var version = "1.0";
-        var filesToCache = [
-            './',
-            'index.html',
-            'TemplateData/Background.png',
-            'TemplateData/LoadCircle.png',
-            'TemplateData/favicon.ico',
-            'Build/8e864c2eaabbb39c726c2dc4cfa3daea.data.unityweb',
-            'Build/b6d7dc920e35302ed7c77a9e70035756.js.unityweb',
-            'Build/9b4d711547f668c3f568df1b4cfdce2e.wasm.unityweb',
-            'Build/TelegramMiniApp-DeadlyBet-WebBuild.loader.js'
-        ];
-    
-        navigator.serviceWorker.register('/ServiceWorker.js').then(function(registration)
-        {
-            console.log('Service Worker registered with scope:', registration.scope);
-    
-            if (registration.active)
-            {
-                registration.active.postMessage(
-                {
-                    title: 'SetVersion',
-                    version: version,
-                    files: filesToCache
-                });
-            }
-        }).catch(function(error)
-        {
-            console.log('Service Worker registration failed:', error);
-        });
-    }
-
     var container = document.querySelector("#unity-container");
     var canvas = document.querySelector("#unity-canvas");
     var loadingBar = document.querySelector(".loader");
