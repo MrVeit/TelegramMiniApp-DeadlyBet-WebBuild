@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function()
     var buildUrl = "Build";
     var loaderUrl = buildUrl + "/TelegramMiniApp-DeadlyBet-WebBuild.loader.js";
     var config = {
-        dataUrl: buildUrl + "/8e864c2eaabbb39c726c2dc4cfa3daea.data.unityweb",
-        frameworkUrl: buildUrl + "/b6d7dc920e35302ed7c77a9e70035756.js.unityweb",
-        codeUrl: buildUrl + "/9b4d711547f668c3f568df1b4cfdce2e.wasm.unityweb",
+        dataUrl: buildUrl + "/aa2967a3403853ca2ec519dda4950047.data.unityweb",
+        frameworkUrl: buildUrl + "/9685490dffcbd28a85bb2f5ae23d539d.js.unityweb",
+        codeUrl: buildUrl + "/b54e7accb2d738167329f19484c16055.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BeniFun",
         productName: "Deadly Bet",
